@@ -22,9 +22,17 @@ p {
 	color: #444;
 }
 
-#cv {
+Bold {
+    font-weight: bold;
+}
+
+Emph {
+    font-style: italic;
+}
+
+#wholePage {
 	width: 90%;
-	max-width: 800px;
+	max-width: 1000px;
 	background: #f3f3f3;
 	margin: 30px auto;
 }
@@ -35,15 +43,15 @@ p {
 	background: #ededed;
 }
 
-#name h1 {
+#contactDetails h1 {
 	font-size: 2.5em;
 	font-weight: 700;
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	margin-bottom: -6px;
 }
 
-#name h2 {
-	font-size: 2em;
+#contactDetails h2 {
+	font-size: 1.8em;
 	margin-left: 2px;
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 }
@@ -65,26 +73,35 @@ p {
 	border-radius: 50px;
 }
 
-#name {
+#contactDetails {
 	float: left;
 }
 
-#contactDetails {
+#contactDetails ul {
+	list-style-type: none;
+}
+
+.socialIcon {
+	padding-right: 5px;
+    float: left;
+}
+
+#pageInfo {
 	float: right;
 }
 
-#contactDetails ul {
+#pageInfo ul {
 	list-style-type: none;
 	font-size: 0.9em;
 	margin-top: 2px;
 }
 
-#contactDetails ul li {
+#pageInfo ul li {
 	margin-bottom: 3px;
 	color: #444;
 }
 
-#contactDetails ul li a, a[href^=tel] {
+#contactDetails,pageInfo ul li a, a[href^=tel] {
 	color: #444; 
 	text-decoration: none;
 	-webkit-transition: all .3s ease-in;
@@ -94,10 +111,9 @@ p {
 	transition: all .3s ease-in;
 }
 
-#contactDetails ul li a:hover { 
+#pageInfo ul li a:hover { 
 	color: #cf8a05;
 }
-
 
 section {
 	border-top: 1px solid #dedede;
@@ -135,40 +151,48 @@ section:last-child {
 	margin-bottom: -2px;
 }
 
-.subDetails {
-	font-size: 0.8em;
-	font-style: italic;
-	margin-bottom: 3px;
+.paperShow {
+	padding: 10px 0px;
+	border-bottom: 2px;
+	background: #ededed;
+    height: 150px;
 }
 
-.keySkills {
-	list-style-type: none;
-	-moz-column-count:3;
-	-webkit-column-count:3;
-	column-count:3;
-	margin-bottom: 20px;
-	font-size: 1em;
-	color: #444;
+.paperImage {
+    float: left;
+    width: 25%;
+    height: 100%;
+    max-width: 25%;
+    max-height: 100%;
 }
 
-.keySkills ul li {
-	margin-bottom: 3px;
+.paperImage img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.paperInfo {
+    float: right;
+    width: 72.5%;
+    height: 100%;
+    max-width: 72.5%;
+    max-height: 100%;
+}
+
+.paperFile {
+	padding-right: 10px;
+    float: left;
 }
 
 @media all and (min-width: 602px) and (max-width: 800px) {
 	#headshot {
 		display: none;
 	}
-	
-	.keySkills {
-	-moz-column-count:2;
-	-webkit-column-count:2;
-	column-count:2;
-	}
 }
 
 @media all and (max-width: 601px) {
-	#cv {
+	#wholePage {
 		width: 95%;
 		margin: 10px auto;
 		min-width: 280px;
@@ -178,7 +202,7 @@ section:last-child {
 		display: none;
 	}
 	
-	#name, #contactDetails {
+	#contactDetails, #pageInfo {
 		float: none;
 		width: 100%;
 		text-align: center;
@@ -192,12 +216,6 @@ section:last-child {
 	.sectionTitle {
 		margin-left: -2px;
 		font-size: 1.25em;
-	}
-	
-	.keySkills {
-		-moz-column-count:2;
-		-webkit-column-count:2;
-		column-count:2;
 	}
 }
 
@@ -215,20 +233,14 @@ section:last-child {
 	}
 
 	
-	.keySkills {
-	-moz-column-count:1;
-	-webkit-column-count:1;
-	column-count:1;
-	}
-	
-	#name h1 {
+	#contactDetails h1 {
 		line-height: .8em;
 		margin-bottom: 4px;
 	}
 }
 
 @media print {
-    #cv {
+    #wholePage {
         width: 100%;
     }
 }

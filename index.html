@@ -15,89 +15,130 @@
 <![endif]-->
 </head>
 <body id="top">
-<div id="cv" class="instaFade">
+<div id="wholePage" class="instaFade">
 	<div class="mainDetails">
 		<div id="headshot" class="instaFade">
 			<img src="./images/zhufei.jpg" alt="Fei Zhu" />
 		</div>
 		
-		<div id="name">
-			<h1 class="instaFade delayOne">Fei Zhu</h1>
-			<h2 class="instaFade delayOne">Ph.D. Student</h2>
+		<div id="contactDetails">
+          <ul>
+            <li><h1 class="instaFade delayOne">Fei Zhu</h1></li>
+            <li><h2 class="instaFade delayOne">Ph.D. Student</h2></li>
+            <li><h2>Email: <a href="mailto:feizhu@pku.edu.cn" target="_blank">feizhu@pku.edu.cn</a></h2></li>
+          </ul>
+          <div class="socialIcon">
+            <a href="http://cn.linkedin.com/in/feizhugraphics">      
+              <img src="./images/linkedin.png" width="32" height="32" border="0" alt="View FeiZhu's profile on LinkedIn"/>
+            </a>
+          </div>
+          <div class="socialIcon">
+            <a href="https://github.com/FeiZhu">      
+              <img src="./images/github.png" width="30" height="30" border="0" alt="View FeiZhu's profile on GitHub"/>
+            </a>
+          </div>
 		</div>
 		
-		<div id="contactDetails" class="instaFade delayOne">
-			<ul>
-				<li>email: <a href="mailto:feizhu@pku.edu.cn" target="_blank">feizhu@pku.edu.cn</a></li>
-				<li>Last modified: 2013/7/24</li>
-			</ul>
+		<div id="pageInfo" class="instaFade delayOne">
+				Last modified: 2014/7/4
 		</div>
 		<div class="clear"></div>
 	</div>
 	
 	<div id="mainArea" class="instaFade delayOne">
+
+      <!-- Personal Profile Section-->
 		<section>
 			<article>
 				<div class="sectionTitle">
 					<h1>Personal Profile</h1>
-				</div>
-				
+				</div>				
 				<div class="sectionContent">
 					<p>
-					I am a Ph.D. student in <a target="_blank" href="http://www.graphics.pku.edu.cn">Graphics and Interactive Technology Lab</a> at 
+					I am a Ph.D. student at <a target="_blank" href="http://www.graphics.pku.edu.cn">Graphics and Interactive Technology Lab</a> of 
 		<a target="_blank" href="http://english.pku.edu.cn/">Peking University</a>, advised by <a target="_blank" href="http://www.graphics.pku.edu.cn/members/wgp/index.htm">Prof. Guoping Wang</a>.
 		I joined the lab in 2010, after graduating from <a target="_blank" href="http://www.xjtu.edu.cn/en/">Xi'an Jiaotong University</a> with a B.E. degree in Computer Science.
 		            </p>
 		            <p>
-		I do research in computer graphics, with primary focus on physics based animation. Most recently, I am investigating methods for easy and intuitive control of  physics based animation.
-		Before that I tried to couple high resolution embedded surface mesh to low resolution Eulerian solid simulation in order to simulate fracture. For more information about my research experience, please see my <a target="_blank" href="./files/cv_2013.pdf">CV</a>.
+		I do research in computer graphics, with primary focus on physics based animation. More specifically, I'm working on alogrithms for fast simulation and artistic control of complex deformable materials. I'm aslo interested and experienced in computer simulation of fracture, fluid, and hair. <Emph>Latest CV coming soon.</Emph>
 		            </p>
 				</div>
 			</article>
 			<div class="clear"></div>
 		</section>
 		
-		
+        <!--News Section -->
 		<section>
 			<div class="sectionTitle">
 				<h1>Recent Updates</h1>
-			</div>
-			
+			</div>			
 			<div class="sectionContent">
+              <p>
+                  <Bold>[2014/7/1]</Bold> Our paper "Example-based Materials in Laplace-Beltrami Shape Space" has been accepted by Computer Graphics Forum. Project page coming soon.
+              </p>
 			    <p>
-			    <S><strong>[2013/2/24]</strong> I'm looking for one position as a visiting student.</S>
+			    <S><Bold>[2013/2/24]</Bold> I'm looking for one position as a visiting student.</S>
 			    </p>
 			</div>
 			<div class="clear"></div>
 		</section>
 		
-		
+		<!--Publication Section-->
 		<section>
 			<div class="sectionTitle">
 				<h1>Publications</h1>
 			</div>
-			
-			<div class="sectionContent">
-				<ul>
-				    <li>Ning Liu, <strong>Fei Zhu</strong>, Sheng Li, Guoping Wang: <em>Anisotropic Kernels for Meshless Elastic Solids</em>. CAD/Graphics 2011: 349 - 356.</li>
-				</ul>
-			</div>
+            <br/><br/>
+            <!-- Paper 1-->
+            <div class="paperShow">
+              <div class="paperImage">
+                <img src="./images/cgf_paper.png" border="0" alt="CGF paper preview"/>
+              </div>
+              <div class="paperInfo">
+                <p><Bold>Fei Zhu</Bold>, Sheng Li, Guoping Wang: <Emph>Example-based Materials in Laplace-Beltrami Shape Space</Emph>. Computer Graphics Forum: to appear.</p>
+                <div class="paperFile">[PDF]</div>
+                <div class="paperFile">[Demo]</div>
+                <div class="paperFile">[Project Page]</div>
+              </div>
+            </div>
+            <!-- Paper 2-->
+            <div class="paperShow">
+              <div class="paperImage">
+                <img src="./images/cadcg_paper.png" border="0" alt="CGF paper preview"/>
+              </div>
+              <div class="paperInfo">
+				<p>Ning Liu, <Bold>Fei Zhu</Bold>, Sheng Li, Guoping Wang: <Emph>Anisotropic Kernels for Meshless Elastic Solids</Emph>. CAD/Graphics 2011: 349 - 356.</p>
+                <div class="paperFile"><a href="./papers/2011_CAD&Graphics_Anisotropic Kernels for Meshless Elastic Solids.pdf">[PDF]</a></div>
+                <div class="paperFile"><a href="2011_CAD&Graphics_Anisotropic Kernels for Meshless Elastic Solids.avi">[Demo]</a></div>
+                <div class="paperFile">[Project Page]</div>
+              </div>
+            </div>
 			<div class="clear"></div>
 		</section>
+
+        <!--Projects Section-->
+        <section>
+          <div class="sectionTitle">
+                      <h1>Projects</h1>
+          </div>
+          <div class="sectionContent">
+            Coming soon...
+          </div>
+          <div class="clear"></div>
+        </section>
 		
-		
+		<!-- Links Section-->
 		<section>
 			<div class="sectionTitle">
 				<h1>Links</h1>
 			</div>
-			
 			<div class="sectionContent">
 			    <article>
-			        <h2><a target="_blank" href="http://kesen.realtimerendering.com/">Ke-Sen Huang's Home Page</a></h2>
+			        <h3><a target="_blank" href="http://kesen.realtimerendering.com/">Ke-Sen Huang's Home Page</a></h3>
 			        <p>Collection of graphics and vision papers</p>
-			        <h2><a target="_blank" href="http://www.physicsbasedanimation.com/">Physics-Based Animation Blog</a></h2>
+			        <h3><a target="_blank" href="http://www.physicsbasedanimation.com/">Physics-Based Animation Blog</a></h3>
 			        <p>A blog accumulating research on physics based animation</p>
-			        <h2><a target="_blank" href="http://www.html5xcss3.com/">Free Html5 and Css3 Website Templates</a></h2>
+			        <h3><a target="_blank" href="http://www.html5xcss3.com/">Free Html5 and Css3 Website Templates</a></h3>
 			        <p>I design this homepage based on one template found on this site</p> 
 			    </article>
 			</div>
@@ -111,7 +152,7 @@ var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "htt
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
 <script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-3753241-1");
+var pageTracker = _gat._getTracker("UA-39425424-2");
 pageTracker._initData();
 pageTracker._trackPageview();
 </script>
