@@ -30,6 +30,10 @@ Emph {
     font-style: italic;
 }
 
+Small {
+	font-size: 0.5em;
+}
+
 #wholePage {
 	width: 90%;
 	max-width: 1000px;
@@ -141,7 +145,7 @@ section:last-child {
 .sectionTitle h1 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	font-style: italic;
-	font-size: 1.5em;
+	font-size: 2.0em;
 	color: #cf8a05;
 }
 
@@ -179,9 +183,21 @@ section:last-child {
     max-height: 100%;
 }
 
+.paperInfo h1 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-size: 1.4em;
+	margin-bottom: -2px;
+}
+
 .paperFile {
 	padding-right: 10px;
     float: left;
+}
+
+#thesisShow {
+	padding: 10px 0px;
+	border-bottom: 2px;
+    height: 180px;
 }
 
 @media all and (min-width: 602px) and (max-width: 800px) {
